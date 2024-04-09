@@ -1,0 +1,96 @@
+a:hover {
+  color: #ff305b;
+}
+/*  ======== hover about ======== */
+
+.about .contint-about .box .img:hover .cover-about {
+  height: 100%;
+  opacity: 1;
+}
+
+/*  ======== hover servces ======== */
+.services .continer .item:hover {
+  background-color: #ffffff;
+  border-radius: 6%;
+}
+
+.services .continer .item:hover i {
+  transform: scale(1.2) rotate(360deg);
+}
+
+/* ============ Portfolio ========  */
+section.Portfolio .brand:hover .cav {
+  opacity: 1;
+  top: 0px;
+}
+
+section.Portfolio .brand:hover img {
+  transform: scale(1.1);
+}
+
+/* ============ counter works ========  */
+.continer .item-1:hover span.icnos {
+  transform: rotate(360deg) scale(1.8);
+}
+
+/* ============ blog ========  */
+.continer-blog .item-blog a:hover {
+  color: #ff305b;
+}
+
+.continer-blog .item-blog button:hover {
+  color: #ff305b;
+}
+
+/* ============ footer ========  */
+footer ul li:hover i {
+  color: #ff305b;
+}
+
+
+input:hover {
+  border-radius: 6%;
+  border: solid 2px red;
+}
+
+
+
+/* animition */
+
+@keyframes move {
+
+  0%{content :"i."}
+  4%{content :"i'm"}
+  8%{content :"i'm"}
+  12%{content :"m"}
+  16%{content :"w"}
+  19%{content :"we"}
+  23%{content :"web"}
+  27%{content :"web"}
+  30%{content :"we"}
+  33%{content :"w"}
+  36%{content :"d"}
+  39%{content :"de"}
+  42%{content :"dev"}
+  45%{content :"deve"}
+  48%{content :"devel"}
+  51%{content :"develo"}
+  53%{content :"develop"}
+  56%{content :"developm"}
+  59%{content :"developmen"}
+  62%{content :"development"}
+  65%{content :"develppme"}
+  69%{content :"develop"}
+  72%{content :"devel"}
+  75%{content :"dev"}
+  79%{content :"d"}
+  82%{content :"di"}
+  85%{content :"dis"}
+  88%{content :"dise"}
+  92%{content :"disenr"}
+  95%{content :"disenr"}
+  97%{content :"dis"}
+  100%{content :"d"}
+
+}
+

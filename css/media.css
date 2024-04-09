@@ -1,0 +1,151 @@
+@media (max-width: 575.98px) {
+  /* ========== header @ nav ========== */
+  header {
+    position: relative;
+  }
+  /* ========== section home ========== */
+  section.home div.contint {
+    padding-top: 200px;
+  }
+
+  section.home .contint h1 {
+    font-size: 40px;
+    line-height: 50px;
+  }
+
+  /* ========== section about ========== */
+
+  .about .contint-about {
+    width: 80%;
+    margin: auto;
+  }
+
+  .about .contint-about .box {
+    float: none;
+  }
+
+  .about .contint-about .box .img img {
+    width: 95%;
+  }
+
+  .contint-about .article {
+    width: 100%;
+    padding-left: 5px;
+  }
+
+  .article button {
+    margin-left: 5px;
+    float: left;
+  }
+
+  /* ==========  section services ======== */
+  .services .continer {
+    width: 90%;
+    margin: auto;
+  }
+
+  .services .continer .item {
+    width: 90%;
+    margin: auto;
+    float: none;
+  }
+
+  /* ============ Portfolio ==== ====  */
+  section.Portfolio .row .buttons {
+    width: 90%;
+    margin: auto;
+  }
+
+  section.Portfolio .row .buttons ul li {
+    float: left;
+    padding: 15px 5px;
+  }
+
+  section.Portfolio .row .buttons ul li button {
+    background-color: transparent;
+    font-size: 15px;
+    border: none;
+  }
+
+  section.Portfolio .contint {
+    width: 100%;
+  }
+
+  section.Portfolio .brand {
+    width: 90%;
+    margin: auto;
+    float: none;
+  }
+
+  /* ============ counter works  =========  */
+  .count .continer {
+    width: 100%;
+    margin: 0;
+  }
+  .continer .item-1 {
+    float: none;
+    width: 90%;
+    margin: auto;
+    padding: 10px 0px;
+  }
+
+  /* ======== sectio feedback ======== */
+  section.feedback {
+    margin-block: 30px;
+  }
+  section.feedback .contint {
+    margin: 0 auto;
+    padding: 10px;
+    width: 90%;
+    padding: 40px 0px;
+  }
+
+  section.feedback .contint .articl {
+    width: 100%;
+  }
+  /* ============ blog ========  */
+  section.blog .continer-blog {
+    width: 95%;
+    margin: auto;
+  }
+  section.blog .continer-blog .item-blog {
+    width: 90%;
+    margin: auto;
+    float: none;
+  }
+
+  /*  ======= contact us ======== */
+  section.contact .form {
+    width: 80%;
+  }
+
+  section.contact .form form input {
+    width: 90%;
+    border: 3px solid;
+  }
+  section.contact .form form fieldset input {
+    width: 90%;
+  }
+
+  section.contact .form form textarea {
+    border: 3px solid;
+    width: 90%;
+  }
+  /* ========== foter ======== */
+  footer {
+    text-align: center;
+    background-color: #333333;
+    padding: 0px 0px;
+    color: #f1f1f1;
+  }
+  
+  footer ul {
+    padding-block: 30px;
+    width: 40%;
+    margin: auto;
+  }
+
+  footer ul li i {
+    padding: 10px;
+  }
+}

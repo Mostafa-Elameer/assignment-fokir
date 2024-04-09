@@ -1,0 +1,535 @@
+/* ========== glopale ========== */
+body {
+  font-family: Roboto, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+textarea {
+  display: block;
+}
+
+.clear-fix {
+  clear: both;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: aliceblue;
+  font-family: Roboto, sans-serif;
+  font-weight: 300;
+  line-height: 20px;
+}
+
+p {
+  font-family: Roboto, sans-serif;
+}
+
+h2 {
+  font-family: "Source Sans 3", sans-serif;
+  font-size: 40px;
+  line-height: 30px;
+}
+
+h3 {
+  font-family: "Source Sans 3", sans-serif;
+  font-size: 24px;
+  line-height: 26px;
+  font-weight: 600;
+  padding: 5px 0px;
+  margin: 5px 0px;
+}
+
+.lines {
+  background-color: #ff305b;
+  position: relative;
+  margin: 10px auto;
+  width: 15%;
+  height: 1px;
+}
+
+.lines::before {
+  content: "";
+  width: 50%;
+  background-color: #ff305b;
+  height: 1px;
+  position: absolute;
+  bottom: 5px;
+  left: 27%;
+}
+
+.lines::after {
+  content: "";
+  width: 50%;
+  background-color: #ff305b;
+  height: 1px;
+  position: absolute;
+  top: 5px;
+  left: 27%;
+}
+
+/* ========== header @ nav ========== */
+
+header {
+  z-index: 100;
+  background-color: rgba(7, 7, 7, 0.8);
+  padding: 10px;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+}
+
+header .contint {
+  width: 90%;
+  margin: auto;
+}
+
+header .logo {
+  width: 40%;
+  float: left;
+  padding-top: 10px;
+}
+
+.logo span {
+  padding-left: 40px;
+  font-size: 24px;
+  line-height: 25px;
+  color: #ff305b;
+}
+
+nav {
+  padding-left: 150px;
+  width: 60%;
+  float: left;
+  box-sizing: border-box;
+}
+
+nav ul li {
+  float: left;
+  padding-left: 20px;
+}
+
+/* ========== section home ========== */
+section.home {
+  height: 100vh;
+  background-image: url(../images/hero\ img.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+section.home div.contint {
+  background-color: rgba(10, 10, 10, 0.8);
+  height: 100%;
+  padding-top: 300px;
+  color: aliceblue;
+  text-align: center;
+}
+
+section.home .contint span {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+section.home .contint h1 {
+  color: #ff305b;
+  font-size: 60px;
+  line-height: 100px;
+  font-weight: 700;
+}
+
+section.home .contint p {
+  font-size: 25px;
+  text-align: center;
+}
+
+section.home .contint p::after {
+  content: "";
+  background-color: #ff30592c;
+  left: 105%;
+  top: 0;
+  padding-left: 10px;
+  animation: move 5s infinite;
+}
+
+/* ========== section about ========== */
+
+section.about {
+  margin-block: 100px;
+}
+
+.about .contint-about {
+  width: 70%;
+  margin: auto;
+}
+
+.about .contint-about .box {
+  float: left;
+  border: #333333 8px solid;
+  border-radius: 3%;
+}
+
+.about .contint-about .box .img {
+  transform: translate(25px, 25px);
+  position: relative;
+}
+
+.about .contint-about .box .img .cover-about {
+  background-color: rgba(51, 51, 51, 0.6);
+  text-align: center;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 0%;
+  opacity: 0;
+  transition: all 1s;
+}
+
+.about .contint-about .box .img .cover-about i {
+  padding: 150px 10px;
+  color: #f1f1f1;
+}
+
+.contint-about .article {
+  float: right;
+  width: 58%;
+  padding-top: 30px;
+  padding-left: 40px;
+  vertical-align: top;
+}
+
+.article h2 {
+  font-size: 32px;
+  padding-left: 10px;
+  border-left: solid 5px #ff305b;
+}
+
+.article p {
+  padding: 15px 0px 15px 0px;
+  border-bottom: 3px dashed;
+}
+
+.article ul span {
+  font-weight: 600;
+  color: #ff305b;
+}
+
+.article ul.ul-2,
+.article ul.ul-1 {
+  margin-top: 10px;
+  float: left;
+}
+
+.article li {
+  margin: 15px 35px;
+}
+
+.article button {
+  padding: 12px 25px;
+  margin-left: 20px;
+  background-color: #ff305b;
+  color: #f1f1f1;
+  border: none;
+  font-size: 16px;
+}
+
+/* ==========  section services ======== */
+.services {
+  background-color: #f1f1f1;
+  padding: 80px 0px;
+  text-align: center;
+}
+
+.services .continer {
+  width: 75%;
+  margin: auto;
+}
+
+.services .continer .item {
+  padding: 40px 0px;
+  float: left;
+  width: 25%;
+  transition: all 0.5s;
+}
+
+.icnos {
+  color: #ff305b;
+  font-size: 30px;
+  margin-bottom: 10px;
+  transition: transform 0.6s;
+}
+
+.item p {
+  margin: 2px;
+  padding: 0px 5px;
+}
+
+/* ============ Portfolio ==== ====  */
+
+section.Portfolio .our-port {
+  margin-top: 60px;
+  text-align: center;
+}
+
+section.Portfolio .row .buttons {
+  width: 35%;
+  margin: auto;
+}
+
+section.Portfolio .row .buttons ul li {
+  float: left;
+  padding: 20px 15px;
+}
+
+section.Portfolio .row .buttons ul li button {
+  background-color: transparent;
+  font-weight: 500;
+  font-size: 16px;
+  border: none;
+}
+
+section.Portfolio .contint {
+  margin: auto;
+  width: 80%;
+}
+
+section.Portfolio .brand {
+  float: left;
+  width: 33.3333%;
+  padding: 15px;
+  position: relative;
+  overflow: hidden;
+  transition: all 1s;
+}
+
+section.Portfolio .contint .brand .cav {
+  width: 90%;
+  position: absolute;
+  background-color: rgba(10, 10, 10, 0.6);
+  left: 30px;
+  top: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: 1s;
+}
+
+section.Portfolio .brand img {
+  width: 100%;
+  display: block;
+  transition: all 1s;
+}
+
+/* ============ counter works  =========  */
+section.count {
+  background-color: #f1f1f1;
+  margin-block: 50px;
+  padding: 15px 0px;
+}
+
+.count .continer {
+  width: 75%;
+  margin: 70px auto;
+  padding: 50px 0px;
+}
+
+.continer .item-1 {
+  float: left;
+  text-align: center;
+  width: 25%;
+}
+
+.item-1 span {
+  font-weight: 600;
+  font-size: 23px;
+  padding: 6px;
+  display: block;
+  transition: 1s;
+}
+
+/* ======== sectio feedback ======== */
+section.feedback {
+  margin-block: 150px;
+}
+
+section.feedback .feed {
+  text-align: center;
+}
+
+section.feedback .contint {
+  background-color: #f1f1f1;
+  margin: 30px auto;
+  width: 50%;
+  padding: 40px 0px;
+  position: relative;
+}
+
+section.feedback .contint .imge::after {
+  content: "";
+  border-top: #ff305b 100px solid;
+  border-right: transparent 100px solid;
+  border-bottom: transparent 100px solid;
+  border-left: #ff305b 100px solid;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+section.feedback .contint .imge {
+  float: left;
+  width: 30%;
+  box-sizing: border-box;
+}
+
+section.feedback .contint .imge img {
+  border-radius: 50%;
+  margin-left: 30px;
+  position: relative;
+  z-index: 6;
+}
+
+section.feedback .contint .articl {
+  float: left;
+  width: 60%;
+  box-sizing: border-box;
+}
+
+section.feedback .contint .articl h4 {
+  font-size: 32px;
+  margin: 5px;
+}
+
+/* ============ blog ========  */
+section.blog {
+  padding: 100px 0px;
+  background-color: #f1f1f1;
+}
+
+section.blog .our {
+  text-align: center;
+}
+
+section.blog .continer-blog {
+  width: 80%;
+  margin: auto;
+}
+
+section.blog .continer-blog .item-blog {
+  background-color: #fff;
+  padding: 10px 0px;
+  width: 33.333%;
+  float: left;
+  border: solid 20px #f1f1f1;
+}
+
+.continer-blog .item-blog img {
+  width: 100%;
+}
+
+iframe {
+  width: 100%;
+  height: 200px;
+}
+
+.continer-blog .item-blog a {
+  display: block;
+  margin: 10px 0px;
+  font-size: 20px;
+  font-weight: 400;
+  color: black;
+  transition: 0.5s;
+}
+
+.continer-blog .item-blog button {
+  background-color: transparent;
+  border: none;
+  padding: 10px 0px;
+}
+
+/*  ======= contact us ======== */
+section.contact {
+  padding: 100px 0px;
+}
+
+section.contact .contact-us {
+  text-align: center;
+}
+
+fieldset {
+  border: none;
+}
+
+section.contact .form {
+  width: 50%;
+  margin: auto;
+  text-align: center;
+}
+
+section.contact .form form fieldset input {
+  width: 45%;
+  padding: 10px 5px;
+  margin: 10px;
+}
+
+section.contact .form form input {
+  width: 93%;
+  padding: 10px 5px;
+  margin: 20px;
+}
+
+section.contact .form form textarea {
+  width: 93%;
+  padding: 10px 5px;
+  margin: auto;
+}
+
+section.contact .form form button {
+  background-color: #ff305b;
+  margin: 30px;
+  padding: 10px;
+  color: #f1f1f1;
+  font-size: 16px;
+  border: none;
+  float: left;
+}
+
+/* ========== foter ======== */
+footer {
+  text-align: center;
+  background-color: #333333;
+  padding: 60px 0px;
+  color: #f1f1f1;
+}
+
+footer ul {
+  width: 20%;
+  margin: auto;
+}
+
+footer ul li {
+  float: left;
+}
+
+footer ul li i {
+  font-size: 20px;
+  padding: 20px;
+}
+
+span .th {
+  color: #ff305b;
+  font-size: large;
+}
